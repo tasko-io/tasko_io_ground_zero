@@ -1,7 +1,7 @@
 # tasko_io_ground_zero
 v1.0 of the first fully decentralized outsourcing platform with integrated quality assurance
 
-About
+[b]About[/b]
 
 We are building tasko.io – a fully decentralized, blockchain-based outsourcing platform with an integrated end-to-end quality assurance process. 
 
