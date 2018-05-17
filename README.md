@@ -1,7 +1,7 @@
 # tasko_io_ground_zero
 ![alt tag](https://github.com/tasko-io/tasko_io_ground_zero/blob/master/Banner.png?raw=true)
 
-[b]About[/b]
+**About**
 
 We are building tasko.io – a fully decentralized, blockchain-based outsourcing platform with an integrated end-to-end quality assurance process. 
 
