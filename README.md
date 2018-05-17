@@ -14,18 +14,18 @@ The most important freelancer (e.g. ratings), task and client data get stored on
 For more details, please refer to our Whitepaper Draft: https://www.tasko.io/#whitepaper
 
 
-A shout out to the community!
+**A shout out to the community!**
 
 We would like to encourage motivated developers to join this open source project. Early contributors can expect a fair and significant share of equity/tokens.
 
-How to get in touch
+**How to get in touch**
 
 
 Telegram: http://telegram.me/therealtasko
 Website: http://www.tasko.io
 Email: support@tasko.io
 
-Core team vacancies
+**Core team vacancies**
 
 
 We are currently looking for an additional tech co-founder. More details on https://angel.co/tasko-2/jobs/345438-co-founder-in-a-high-growth-tech-start-up
