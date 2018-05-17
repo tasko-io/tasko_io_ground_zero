@@ -1,5 +1,5 @@
 # tasko_io_ground_zero
-![alt tag](https://ibb.co/cjAHmJ)
+![alt tag](https://github.com/tasko-io/tasko_io_ground_zero/blob/master/Banner.png?raw=true)
 
 [b]About[/b]
 
