@@ -1,5 +1,5 @@
 # tasko_io_ground_zero
-https://web.telegram.org/6d00ee2f-3157-40f5-9e4f-991458470f45
+https://ibb.co/cjAHmJ
 
 [b]About[/b]
 
