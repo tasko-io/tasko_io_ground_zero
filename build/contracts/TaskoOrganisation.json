@@ -1,0 +1,1140 @@
+{
+  "contractName": "TaskoOrganisation",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "eternalStorage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_email",
+          "type": "string"
+        }
+      ],
+      "name": "addTaskee",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTaskee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061001961007a565b604051809103906000f080158015610035573d6000803e3d6000fd5b506000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061008a565b60405161171a806106c983390190565b610630806100996000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634121ab151461005c578063689c7f791461010b57806398ff9c5414610207575b600080fd5b34801561006857600080fd5b50610109600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061025e565b005b34801561011757600080fd5b50610120610424565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b83811015610164578082015181840152602081019050610149565b50505050905090810190601f1680156101915780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156101ca5780820151818401526020810190506101af565b50505050905090810190601f1680156101f75780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561021357600080fd5b5061021c6105df565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673__TaskeeLibrary_________________________63985a2217909184846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561035557808201518184015260208101905061033a565b50505050905090810190601f1680156103825780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103bb5780820151818401526020810190506103a0565b50505050905090810190601f1680156103e85780820380516001836020036101000a031916815260200191505b509550505050505060006040518083038186803b15801561040857600080fd5b505af415801561041c573d6000803e3d6000fd5b505050505050565b6060806000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673__TaskeeLibrary_________________________631e5756d790916040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060006040518083038186803b1580156104f757600080fd5b505af415801561050b573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250604081101561053557600080fd5b81019080805164010000000081111561054d57600080fd5b8281019050602081018481111561056357600080fd5b815185600182028301116401000000008211171561058057600080fd5b5050929190602001805164010000000081111561059c57600080fd5b828101905060208101848111156105b257600080fd5b81518560018202830111640100000000821117156105cf57600080fd5b5050929190505050915091509091565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204c74f455c3604fd7301f32e518acf337a5d5b7c253628441f596fd265b2926800029608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506116ba806100606000396000f30060806040526004361061013e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063025ec81a14610143578063043106c0146101905780630c55d925146101c1578063124f2418146101f257806317e7dd221461022357806325cf512d1461026c5780633562fd20146102ab5780633cc1635c146102e65780633eba9ed21461031757806344bfa56e146103545780634c77e5ba146103fe5780635a2bf25a1461046f578063715018a6146104c05780638267a9ee146104d75780638da5cb5b146105085780639007127b1461055f57806393fe4248146105a4578063a209a29c146105d5578063a77aa49e1461067f578063ba69fcaa146106ba578063bdc963d8146106eb578063c9a52d2c14610730578063f2fde38b146107a7578063f5866066146107ea575b600080fd5b34801561014f57600080fd5b506101726004803603810190808035600019169060200190929190505050610861565b60405180826000191660001916815260200191505060405180910390f35b34801561019c57600080fd5b506101bf6004803603810190808035600019169060200190929190505050610886565b005b3480156101cd57600080fd5b506101f06004803603810190808035600019169060200190929190505050610922565b005b3480156101fe57600080fd5b5061022160048036038101908080356000191690602001909291905050506109a7565b005b34801561022f57600080fd5b506102526004803603810190808035600019169060200190929190505050610a24565b604051808215151515815260200191505060405180910390f35b34801561027857600080fd5b506102a960048036038101908080356000191690602001909291908035600019169060200190929190505050610a56565b005b3480156102b757600080fd5b506102e4600480360381019080803560001916906020019092919080359060200190929190505050610ad9565b005b3480156102f257600080fd5b506103156004803603810190808035600019169060200190929190505050610b58565b005b34801561032357600080fd5b506103526004803603810190808035600019169060200190929190803515159060200190929190505050610be1565b005b34801561036057600080fd5b506103836004803603810190808035600019169060200190929190505050610c73565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156103c35780820151818401526020810190506103a8565b50505050905090810190601f1680156103f05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561040a57600080fd5b5061042d6004803603810190808035600019169060200190929190505050610d30565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561047b57600080fd5b506104be6004803603810190808035600019169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610d75565b005b3480156104cc57600080fd5b506104d5610e2e565b005b3480156104e357600080fd5b506105066004803603810190808035600019169060200190929190505050610f30565b005b34801561051457600080fd5b5061051d610fad565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561056b57600080fd5b5061058e6004803603810190808035600019169060200190929190505050610fd2565b6040518082815260200191505060405180910390f35b3480156105b057600080fd5b506105d36004803603810190808035600019169060200190929190505050610ff7565b005b3480156105e157600080fd5b506106046004803603810190808035600019169060200190929190505050611074565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610644578082015181840152602081019050610629565b50505050905090810190601f1680156106715780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561068b57600080fd5b506106b8600480360381019080803560001916906020019092919080359060200190929190505050611131565b005b3480156106c657600080fd5b506106e960048036038101908080356000191690602001909291905050506111b0565b005b3480156106f757600080fd5b5061071a6004803603810190808035600019169060200190929190505050611235565b6040518082815260200191505060405180910390f35b34801561073c57600080fd5b506107a56004803603810190808035600019169060200190929190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061125a565b005b3480156107b357600080fd5b506107e8600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506112e9565b005b3480156107f657600080fd5b5061085f6004803603810190808035600019169060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050611350565b005b6000600560008360001916600019168152602001908152602001600020549050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156108e157600080fd5b60036000826000191660001916815260200190815260200160002060006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561097d57600080fd5b60046000826000191660001916815260200190815260200160002060006109a491906114d9565b50565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610a0257600080fd5b6005600082600019166000191681526020019081526020016000206000905550565b600060066000836000191660001916815260200190815260200160002060009054906101000a900460ff169050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610ab157600080fd5b8060056000846000191660001916815260200190815260200160002081600019169055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610b3457600080fd5b80600160008460001916600019168152602001908152602001600020819055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610bb357600080fd5b60066000826000191660001916815260200190815260200160002060006101000a81549060ff021916905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c3c57600080fd5b8060066000846000191660001916815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60606004600083600019166000191681526020019081526020016000208054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610d245780601f10610cf957610100808354040283529160200191610d24565b820191906000526020600020905b815481529060010190602001808311610d0757829003601f168201915b50505050509050919050565b600060036000836000191660001916815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610dd057600080fd5b8060036000846000191660001916815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610e8957600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610f8b57600080fd5b6007600082600019166000191681526020019081526020016000206000905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600760008360001916600019168152602001908152602001600020549050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561105257600080fd5b6001600082600019166000191681526020019081526020016000206000905550565b60606002600083600019166000191681526020019081526020016000208054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156111255780601f106110fa57610100808354040283529160200191611125565b820191906000526020600020905b81548152906001019060200180831161110857829003601f168201915b50505050509050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561118c57600080fd5b80600760008460001916600019168152602001908152602001600020819055505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561120b57600080fd5b60026000826000191660001916815260200190815260200160002060006112329190611521565b50565b6000600160008360001916600019168152602001908152602001600020549050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156112b557600080fd5b8060046000846000191660001916815260200190815260200160002090805190602001906112e4929190611569565b505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561134457600080fd5b61134d816113df565b50565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156113ab57600080fd5b8060026000846000191660001916815260200190815260200160002090805190602001906113da9291906115e9565b505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561141b57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b50805460018160011615610100020316600290046000825580601f106114ff575061151e565b601f01602090049060005260206000209081019061151d9190611669565b5b50565b50805460018160011615610100020316600290046000825580601f106115475750611566565b601f0160209004906000526020600020908101906115659190611669565b5b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106115aa57805160ff19168380011785556115d8565b828001600101855582156115d8579182015b828111156115d75782518255916020019190600101906115bc565b5b5090506115e59190611669565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061162a57805160ff1916838001178555611658565b82800160010185558215611658579182015b8281111561165757825182559160200191906001019061163c565b5b5090506116659190611669565b5090565b61168b91905b8082111561168757600081600090555060010161166f565b5090565b905600a165627a7a72305820f427b2f74a3cc3a00165257e5c9ef1d96fe3c6d29fbf0845f557e4dc63f28cbc0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634121ab151461005c578063689c7f791461010b57806398ff9c5414610207575b600080fd5b34801561006857600080fd5b50610109600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061025e565b005b34801561011757600080fd5b50610120610424565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b83811015610164578082015181840152602081019050610149565b50505050905090810190601f1680156101915780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156101ca5780820151818401526020810190506101af565b50505050905090810190601f1680156101f75780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561021357600080fd5b5061021c6105df565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673__TaskeeLibrary_________________________63985a2217909184846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561035557808201518184015260208101905061033a565b50505050905090810190601f1680156103825780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103bb5780820151818401526020810190506103a0565b50505050905090810190601f1680156103e85780820380516001836020036101000a031916815260200191505b509550505050505060006040518083038186803b15801561040857600080fd5b505af415801561041c573d6000803e3d6000fd5b505050505050565b6060806000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673__TaskeeLibrary_________________________631e5756d790916040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060006040518083038186803b1580156104f757600080fd5b505af415801561050b573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250604081101561053557600080fd5b81019080805164010000000081111561054d57600080fd5b8281019050602081018481111561056357600080fd5b815185600182028301116401000000008211171561058057600080fd5b5050929190602001805164010000000081111561059c57600080fd5b828101905060208101848111156105b257600080fd5b81518560018202830111640100000000821117156105cf57600080fd5b5050929190505050915091509091565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204c74f455c3604fd7301f32e518acf337a5d5b7c253628441f596fd265b2926800029",
+  "sourceMap": "61:404:3:-;;;166:71;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:71:3;211:20;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;211:20:3;194:14;;:37;;;;;;;;;;;;;;;;;;61:404;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "61:404:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;243:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;243:108:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:105;;8:9:-1;5:2;;;30:1;27;20:12;5:2;357:105:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;357:105:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;357:105:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:29;;8:9:-1;5:2;;;30:1;27;20:12;5:2;130:29:3;;;;;;;;;;;;;;;;;;;;;;;;;;;243:108;307:14;;;;;;;;;;;:24;;;;;;332:5;338:6;307:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;307:38:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;307:38:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;307:38:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;307:38:3;;;;243:108;;:::o;357:105::-;398:6;405;430:14;;;;;;;;;;;:24;;;;;;:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;430:26:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;430:26:3;;;;;;39:16:-1;36:1;17:17;2:54;430:26:3;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;430:26:3;;;;;;20:11:-1;15:3;12:20;9:2;;;45:1;42;35:12;9:2;73:11;68:3;64:21;57:28;;126:4;121:3;117:14;163:9;145:16;142:31;139:2;;;186:1;183;176:12;139:2;224:3;218:10;338:9;333:1;319:12;315:20;297:16;293:43;290:58;268:11;254:12;251:29;239:118;236:2;;;370:1;367;360:12;236:2;0:382;;430:26:3;;;;;;;20:11:-1;15:3;12:20;9:2;;;45:1;42;35:12;9:2;73:11;68:3;64:21;57:28;;126:4;121:3;117:14;163:9;145:16;142:31;139:2;;;186:1;183;176:12;139:2;224:3;218:10;338:9;333:1;319:12;315:20;297:16;293:43;290:58;268:11;254:12;251:29;239:118;236:2;;;370:1;367;360:12;236:2;0:382;;430:26:3;;;;;;423:33;;;;357:105;;:::o;130:29::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./TaskeeLibrary.sol\";\r\n\r\ncontract TaskoOrganisation\r\n{\r\n  using TaskeeLibrary for address;\r\n  address public eternalStorage;\r\n\r\n  constructor() public {\r\n    eternalStorage = new EternalStorage();\r\n  }\r\n\r\n  function addTaskee(string _name,string _email) public\r\n  {\r\n    eternalStorage.addTaskee(_name,_email);\r\n  }\r\n\r\n  function getTaskee() public view returns(string,string)\r\n  {\r\n    return eternalStorage.getTaskee();\r\n  }\r\n}\r\n",
+  "sourcePath": "/home/ubuntu/tasko/contracts/TaskoOrganisation.sol",
+  "ast": {
+    "absolutePath": "/home/ubuntu/tasko/contracts/TaskoOrganisation.sol",
+    "exportedSymbols": {
+      "TaskoOrganisation": [
+        575
+      ]
+    },
+    "id": 576,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 531,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/home/ubuntu/tasko/contracts/TaskeeLibrary.sol",
+        "file": "./TaskeeLibrary.sol",
+        "id": 532,
+        "nodeType": "ImportDirective",
+        "scope": 576,
+        "sourceUnit": 530,
+        "src": "28:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          324
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 575,
+        "linearizedBaseContracts": [
+          575
+        ],
+        "name": "TaskoOrganisation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 535,
+            "libraryName": {
+              "contractScope": null,
+              "id": 533,
+              "name": "TaskeeLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 529,
+              "src": "100:13:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TaskeeLibrary_$529",
+                "typeString": "library TaskeeLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "94:32:3",
+            "typeName": {
+              "id": 534,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 537,
+            "name": "eternalStorage",
+            "nodeType": "VariableDeclaration",
+            "scope": 575,
+            "src": "130:29:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 536,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "130:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 546,
+              "nodeType": "Block",
+              "src": "187:50:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 544,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 540,
+                      "name": "eternalStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 537,
+                      "src": "194:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 542,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "211:18:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EternalStorage_$324_$",
+                          "typeString": "function () returns (contract EternalStorage)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 541,
+                          "name": "EternalStorage",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 324,
+                          "src": "215:14:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_EternalStorage_$324",
+                            "typeString": "contract EternalStorage"
+                          }
+                        }
+                      },
+                      "id": 543,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "211:20:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EternalStorage_$324",
+                        "typeString": "contract EternalStorage"
+                      }
+                    },
+                    "src": "194:37:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 545,
+                  "nodeType": "ExpressionStatement",
+                  "src": "194:37:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 547,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 538,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "177:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:0:3"
+            },
+            "scope": 575,
+            "src": "166:71:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 561,
+              "nodeType": "Block",
+              "src": "300:51:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 557,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 549,
+                        "src": "332:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 558,
+                        "name": "_email",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 551,
+                        "src": "338:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 554,
+                        "name": "eternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 537,
+                        "src": "307:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 556,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "addTaskee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 496,
+                      "src": "307:24:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_address_$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_address_$",
+                        "typeString": "function (address,string memory,string memory)"
+                      }
+                    },
+                    "id": 559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "307:38:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "307:38:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 562,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addTaskee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 552,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 549,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 562,
+                  "src": "262:12:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 548,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "262:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 551,
+                  "name": "_email",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 562,
+                  "src": "275:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 550,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "275:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "261:28:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 553,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "300:0:3"
+            },
+            "scope": 575,
+            "src": "243:108:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 573,
+              "nodeType": "Block",
+              "src": "416:46:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 569,
+                        "name": "eternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 537,
+                        "src": "430:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 570,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTaskee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 528,
+                      "src": "430:24:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_address_$returns$_t_string_memory_ptr_$_t_string_memory_ptr_$bound_to$_t_address_$",
+                        "typeString": "function (address) view returns (string memory,string memory)"
+                      }
+                    },
+                    "id": 571,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "430:26:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_ptr_$_t_string_memory_ptr_$",
+                      "typeString": "tuple(string memory,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 568,
+                  "id": 572,
+                  "nodeType": "Return",
+                  "src": "423:33:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 574,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTaskee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "375:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 568,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 565,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 574,
+                  "src": "398:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 564,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 567,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 574,
+                  "src": "405:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 566,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "397:15:3"
+            },
+            "scope": 575,
+            "src": "357:105:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 576,
+        "src": "61:404:3"
+      }
+    ],
+    "src": "0:467:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/ubuntu/tasko/contracts/TaskoOrganisation.sol",
+    "exportedSymbols": {
+      "TaskoOrganisation": [
+        575
+      ]
+    },
+    "id": 576,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 531,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "absolutePath": "/home/ubuntu/tasko/contracts/TaskeeLibrary.sol",
+        "file": "./TaskeeLibrary.sol",
+        "id": 532,
+        "nodeType": "ImportDirective",
+        "scope": 576,
+        "sourceUnit": 530,
+        "src": "28:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          324
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 575,
+        "linearizedBaseContracts": [
+          575
+        ],
+        "name": "TaskoOrganisation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 535,
+            "libraryName": {
+              "contractScope": null,
+              "id": 533,
+              "name": "TaskeeLibrary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 529,
+              "src": "100:13:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TaskeeLibrary_$529",
+                "typeString": "library TaskeeLibrary"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "94:32:3",
+            "typeName": {
+              "id": 534,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 537,
+            "name": "eternalStorage",
+            "nodeType": "VariableDeclaration",
+            "scope": 575,
+            "src": "130:29:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 536,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "130:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 546,
+              "nodeType": "Block",
+              "src": "187:50:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 544,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 540,
+                      "name": "eternalStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 537,
+                      "src": "194:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 542,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "211:18:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_EternalStorage_$324_$",
+                          "typeString": "function () returns (contract EternalStorage)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 541,
+                          "name": "EternalStorage",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 324,
+                          "src": "215:14:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_EternalStorage_$324",
+                            "typeString": "contract EternalStorage"
+                          }
+                        }
+                      },
+                      "id": 543,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "211:20:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_EternalStorage_$324",
+                        "typeString": "contract EternalStorage"
+                      }
+                    },
+                    "src": "194:37:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 545,
+                  "nodeType": "ExpressionStatement",
+                  "src": "194:37:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 547,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 538,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "177:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:0:3"
+            },
+            "scope": 575,
+            "src": "166:71:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 561,
+              "nodeType": "Block",
+              "src": "300:51:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 557,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 549,
+                        "src": "332:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 558,
+                        "name": "_email",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 551,
+                        "src": "338:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 554,
+                        "name": "eternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 537,
+                        "src": "307:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 556,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "addTaskee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 496,
+                      "src": "307:24:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_address_$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_address_$",
+                        "typeString": "function (address,string memory,string memory)"
+                      }
+                    },
+                    "id": 559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "307:38:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "307:38:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 562,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addTaskee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 552,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 549,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 562,
+                  "src": "262:12:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 548,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "262:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 551,
+                  "name": "_email",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 562,
+                  "src": "275:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 550,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "275:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "261:28:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 553,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "300:0:3"
+            },
+            "scope": 575,
+            "src": "243:108:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 573,
+              "nodeType": "Block",
+              "src": "416:46:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 569,
+                        "name": "eternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 537,
+                        "src": "430:14:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 570,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTaskee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 528,
+                      "src": "430:24:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_address_$returns$_t_string_memory_ptr_$_t_string_memory_ptr_$bound_to$_t_address_$",
+                        "typeString": "function (address) view returns (string memory,string memory)"
+                      }
+                    },
+                    "id": 571,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "430:26:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_ptr_$_t_string_memory_ptr_$",
+                      "typeString": "tuple(string memory,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 568,
+                  "id": 572,
+                  "nodeType": "Return",
+                  "src": "423:33:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 574,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTaskee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "375:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 568,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 565,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 574,
+                  "src": "398:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 564,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 567,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 574,
+                  "src": "405:6:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 566,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "397:15:3"
+            },
+            "scope": 575,
+            "src": "357:105:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 576,
+        "src": "61:404:3"
+      }
+    ],
+    "src": "0:467:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-07-04T16:09:00.950Z"
+}
