@@ -1134,7 +1134,14 @@
     "name": "solc",
     "version": "0.4.23+commit.124ca40d.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {
+        "TaskeeLibrary": "0x2d175ae3f34143cd0ddc0d50fa2831f54d73ab78"
+      }
+    }
+  },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-07-04T16:09:00.950Z"
+  "updatedAt": "2018-07-09T04:30:16.763Z"
 }
